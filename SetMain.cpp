@@ -33,7 +33,6 @@ int main(void)
 		printf("\nisElement seems OK.\n");
 	}
 
-	// Put a breakpoint here and observe the copy constructor calls
 
 	// Testing a copy constructor
 	Set s2(s1);	// Explicit copy constructor call
