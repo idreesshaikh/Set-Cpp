@@ -10,7 +10,7 @@ Set::Set()
     pData = NULL;
 }
 
-// Write a copy constructor. Do not forget the dynamically allocated attributes!
+
 Set::Set(const Set &theOther)
 {
     elementNum = theOther.elementNum;
@@ -22,14 +22,12 @@ Set::Set(const Set &theOther)
     pData = temp;
 }
 
-// Write a destructor: release dynamically allocated resources.
 Set::~Set()
 {
     delete pData;
     pData = NULL;
 }
-// If the set contains some element, then the same element cannot be inserted again;
-// in this case the method should return true indicating that the element is already there in the set.
+
 bool Set::insert(int element)
 {
     if (elementNum == INT_MAX)
@@ -62,8 +60,6 @@ bool Set::insert(int element)
     return true;
 }
 
-// Remove an element from the set.
-// If there is no such element in the set, then the method should return flase.
 bool Set::remove(int element) //Slight Problem fix it
 {
     /*int RemainElem = elementNum-element;
